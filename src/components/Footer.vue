@@ -96,11 +96,16 @@ export default {
                     color: #fff;
                     text-decoration: none;
                     font-weight: 600;
+
+                    @media (min-width: 800px) {
+                        text-align: initial;
+                    }
                 }
                 ul{
                     gap: 16px;
                     list-style: none;
                     display: flex;
+                    // text-align: center;
                 }
 
                 .col-1,
