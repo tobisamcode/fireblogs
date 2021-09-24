@@ -9,7 +9,7 @@
             <router-link class="link link-light" v-if="post.welcomeScreen" to="#">
                Login/Register<Arrow class="arrow arrow-light" />
             </router-link>
-            <router-link class="link link-light" v-else to="#">
+            <router-link class="link" v-else to="#">
                View The Post<Arrow class="arrow" />
             </router-link>
         </div>
@@ -125,14 +125,14 @@ export default {
 
         img {
             display: block;
-            widows: 100%;
+            width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
 
     &:nth-child(even) {
-        .biog-content {
+        .blog-content {
             order: 2;
         }
         .blog-photo {

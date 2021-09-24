@@ -61,7 +61,7 @@ export default {
 <style lang="scss" scoped>
     footer{
         margin-top: auto;
-        padding: 100px 25px;
+        padding: 100px 150px;
         background-color: #303030;
 
         .container{
