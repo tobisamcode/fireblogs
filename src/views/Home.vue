@@ -7,8 +7,6 @@
 
 
 
-
-
 <script>
 import BlogPost from "../components/BlogPost.vue"
 
@@ -27,7 +25,7 @@ export default {
           {
             title: "This is filler title!",
             blogHTML: "This is a filler blog post title!",
-            blogCoverPhoto: "beaytiful-stories",
+            blogCoverPhoto: "beautiful-stories",
           },
           {
             title: "This is filler title 2!",
