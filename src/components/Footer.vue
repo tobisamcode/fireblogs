@@ -105,7 +105,7 @@ export default {
                     gap: 16px;
                     list-style: none;
                     display: flex;
-                    // text-align: center;
+                    
                 }
 
                 .col-1,

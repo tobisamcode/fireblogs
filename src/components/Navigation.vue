@@ -73,9 +73,13 @@ export default {
 
 header{
     background-color: #fff;
-    padding: 0 100px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, .06) ;
+    padding: 0 25px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, .06);
     z-index: 99;
+
+    @media (min-width: 700px) {
+        padding-left: 50px;
+    }
 
     .link{
         font-weight: 500;
@@ -83,7 +87,7 @@ header{
         transition: .3s color ease;
 
         &:hover{
-            color: #1eb8b8;
+            color: #1eb8b8; 
         }
     }
 
