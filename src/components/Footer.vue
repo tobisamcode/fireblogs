@@ -25,7 +25,7 @@
                         <router-link class="link" :to="{name: 'home' }">Home</router-link>
                         <router-link class="link" :to="{name: 'blogs' }">Blogs</router-link>
                         <router-link v-if="user" class="link" :to="{name: 'newpost' }">Create Post</router-link>
-                        <router-link v-if="!user" class="link" :to="{name: 'login' }">Login In / Register</router-link>
+                        <router-link v-if="!user" class="link login" :to="{name: 'login' }">Login In / Register</router-link>
                     </ul>
                 </div>
             </div>
@@ -157,7 +157,14 @@ export default {
                             font-weight: 500;
                             color: #fff;
                             text-decoration: none;
+
+                            &.login{
+                                width: 170px;
+                                text-align: center;
+
+                            }
                         }
+                        
                     }
                 }
             }
@@ -175,6 +182,9 @@ export default {
 
             p{
                 margin-top: auto;
+                font-size: 10px;
+                width: 215px;
+                text-align: center;
             }
         }
     }
