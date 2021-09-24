@@ -159,7 +159,7 @@ export default {
                             text-decoration: none;
 
                             &.login{
-                                width: 170px;
+                                width: 171px;
                                 text-align: center;
 
                             }
