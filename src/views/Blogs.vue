@@ -20,7 +20,18 @@ export default {
         sampleBlogCards() {
             return this.$store.state.sampleBlogCards;
         },
+        editPost: {
+            get() {
+                return this.$store.state.editPost;
+            },
+            set(payload) {
+                this.$store.commit("toggleEditPost", payload)
+            },
+        },
     },
+    beforeDestroy() {
+        this.$store.commit("toggleEditPost", false)
+    }
 };
 </script>
 
@@ -35,6 +46,9 @@ export default {
         position: absolute;
         top: -70px;
         right: 0;
+        @media (max-width: 450px) {
+            top: -50px;
+        }
 
         span {
             margin-right: 16px;
@@ -63,7 +77,7 @@ export default {
     left: 0;
     background: #303030;
     transform: scale(1.1);
-    transform: 750ms ease all;
+    transition: 750ms ease all;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, .06);
     }
 
@@ -72,6 +86,4 @@ export default {
     left: 52px;
     } 
 }
-
-    
 </style>
