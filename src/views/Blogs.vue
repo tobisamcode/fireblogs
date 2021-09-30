@@ -26,7 +26,22 @@ export default {
 
 
 <style lang="scss" scoped>
-input[type="checkbox"] {
+.blog-cards {
+    position: relative;
+
+    .toggle-edit {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: -70px;
+        right: 0;
+
+        span {
+            margin-right: 16px;
+        }
+    }
+
+    input[type="checkbox"] {
     position: relative;
     border: none;
     -webkit-appearance: none;
@@ -36,9 +51,9 @@ input[type="checkbox"] {
     height: 30px;
     border-radius: 20px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, .06);
-}
+    }
 
-input[type='checkbox']:before {
+    input[type='checkbox']:before {
     content: '';
     position: absolute;
     width: 30px;
@@ -50,13 +65,13 @@ input[type='checkbox']:before {
     transform: scale(1.1);
     transform: 750ms ease all;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, .06);
-}
+    }
 
-input:checked[type='checkbox']:before {
+    input:checked[type='checkbox']:before {
     background: #fff;
     left: 52px;
-} 
-
+    } 
+}
 
     
 </style>
