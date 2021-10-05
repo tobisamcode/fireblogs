@@ -16,11 +16,20 @@ export default {
   name: "app",
   components: {Navigation, Footer},
   data() {
-    return {};
+    return {
+      navigation: null,
+    };
   },
   created() {},
   mounted() {},
-  methods: {},
+  methods: {
+    checkRoute() {
+      if (this.$route.name === "Login" || this.$route.name === "Register" || this.$route.name === "ForgotPassword") {
+        this.navigation = true;
+      }
+      this.navigation = false;
+    };
+  },
   watch: {},
 };
 </script>
