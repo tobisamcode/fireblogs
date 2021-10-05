@@ -57,6 +57,9 @@ export default {
 
     input[type="checkbox"] {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     -webkit-appearance: none;
     background-color: #fff;
@@ -70,10 +73,10 @@ export default {
     input[type='checkbox']:before {
     content: '';
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     border-radius: 20px;
-    top: 0;
+    // top: 2px;
     left: 0;
     background: #303030;
     transform: scale(1.1);
@@ -83,7 +86,8 @@ export default {
 
     input:checked[type='checkbox']:before {
     background: #fff;
-    left: 52px;
+    left: 48px;
+    align-items: center;
     } 
 }
 </style>

@@ -16,10 +16,10 @@
         <menuIcon @click="toggleMobileNav()" class="menu-icon" v-show="mobile"/>
         <transition name="mobile-nav">
             <ul class="mobile-nav" v-show="mobileNav">
-                <router-link class="link" :to="{name: 'Home'}">Home</router-link>
-                <router-link class="link" :to="{name: 'blogs'}">Blogs</router-link>
-                <router-link class="link" to="#">Create Post</router-link>
-                <router-link class="link" :to="{ name: 'Login' }">Login/Register</router-link>
+                <router-link class="link" :to="{name: 'Home'}" @click="hideSideNav()"><p @click="hideSideNav()">Home</p></router-link>
+                <router-link class="link" :to="{name: 'blogs'}"><p @click="hideSideNav()">Blogs</p></router-link>
+                <router-link class="link"  to="#"><p @click="hideSideNav()">Create Post</p></router-link>
+                <router-link class="link" :to="{ name: 'Login' }"><p @click="hideSideNav()">Login / Register</p></router-link>
             </ul>
         </transition>
     </header>
@@ -62,7 +62,12 @@ export default {
 
         toggleMobileNav() {
             this.mobileNav = !this.mobileNav;
-        }
+        },
+        hideSideNav() {
+            this.mobileNav = false;
+        },
+
+
     },
 };
 </script>
