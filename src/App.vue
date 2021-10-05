@@ -21,7 +21,7 @@ export default {
     };
   },
   created() {
-    this.navigation();
+    this.checkRoute();
   },
   mounted() {},
   methods: {
@@ -31,9 +31,13 @@ export default {
         return; 
       } 
       this.navigation = false;
-    };
+    },
   },
-  watch: {},
+  watch: {
+    $route() {
+      this.checkRoute();
+    }
+  },
 };
 </script>
 
