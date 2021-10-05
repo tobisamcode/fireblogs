@@ -1,6 +1,6 @@
-<template>
-    <header>
-        <nav class="container">
+<template >
+    <header >
+        <nav class="container" >
             <div class="branding">
                 <router-link class="header" :to="{name : 'Home'}">FireBlogs</router-link>
             </div>
@@ -14,7 +14,7 @@
             </div>
         </nav>
         <menuIcon @click="toggleMobileNav()" class="menu-icon" v-show="mobile"/>
-        <transition name="mobile-nav">
+        <transition name="mobile-nav" @click="hideSideNav()">
             <ul class="mobile-nav" v-show="mobileNav">
                 <router-link class="link" :to="{name: 'Home'}" @click="hideSideNav()"><p @click="hideSideNav()">Home</p></router-link>
                 <router-link class="link" :to="{name: 'blogs'}"><p @click="hideSideNav()">Blogs</p></router-link>
