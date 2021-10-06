@@ -24,8 +24,8 @@
                     <ul>
                         <router-link class="link" :to="{name: 'Home' }">Home</router-link>
                         <router-link class="link" :to="{name: 'blogs' }">Blogs</router-link>
-                        <router-link v-if="user" class="link" :to="{name: 'newpost' }">Create Post</router-link>
-                        <router-link v-if="!user" class="link login" :to="{name: 'Login' }">Login In / Register</router-link>
+                        <router-link  class="link" :to="{name: 'newpost' }">Create Post</router-link>
+                        <router-link  class="link login" :to="{name: 'Login' }">Login In / Register</router-link>
                     </ul>
                 </div>
             </div>
@@ -45,7 +45,7 @@ import twitter from "../assets/Icons/twitter-brands.svg";
 import instagram from "../assets/Icons/instagram-brands.svg";
 import linkedin from "../assets/Icons/linkedin-brands.svg";
 export default {
-    name: "footer-vue",
+    name: "Footer",
     components: {
         youTube,
         twitter,
