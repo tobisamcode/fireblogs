@@ -13,6 +13,7 @@
                 </ul>
             </div>
         </nav>
+        <div @click="hideSideNav()"></div>
         <menuIcon @click="toggleMobileNav()" class="menu-icon" v-show="mobile"/>
         <transition name="mobile-nav" @click="hideSideNav()">
             <ul class="mobile-nav" v-show="mobileNav">

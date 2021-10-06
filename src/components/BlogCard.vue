@@ -148,6 +148,4 @@ export default {
     }
 }
 
-
-
 </style>
