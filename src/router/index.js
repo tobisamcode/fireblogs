@@ -7,7 +7,7 @@ import Register from "../views/Register.vue";
 import ForgotPassword from "../views/ForgotPassword.vue";
 
 
-Vue.use(VueRouter);
+Vue.use(VueRouter); 
 
 const routes = [
   {
